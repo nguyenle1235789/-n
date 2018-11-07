@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+<title>sinhvien</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/StyleHomeAdmin.css">
+<style>
+body {
+    background-color: #FFFFff;
+}
+</style>
+<body>
+<div class="container">
+	<div class="container" style="background: #0EEF58">
+		<div style="float: left">
+		<a href="index.html"><img src="D:\New folder\images\logo.png" width="200px" height="100px"></a>
+		</div>
+		<div style="float: left; margin-left: 100px; margin-top: 30px; font-size: 27px">
+			<span style="color: #E10A0A">PHẦN MỀM THI TRẮC NGHIỆM UY TÍN HÀNG ĐẦU VIỆT NAM</span>
+		</div>
+	</div>
+	
+	
+	<br/>
+		<div class="content">
+			<div id="menu">
+ 				<ul class="nav nav-tabs" id="navmenu">
+
+ 					<li><a class="active" data-toggle="tab" href="#thongtin">Tài Khoản Sinh Viên</a></li>
+ 					<li><a data-toggle="tab" href="#cbt">Các Bài Test</a>
+ 					</li>
+ 					<li><a data-toggle="tab" href="#">Đổi Mật Khẩu</a></li>
+ 					<li><a data-toggle="tab" href="#ls">Lịch Sử</a></li>
+ 					<li><a data-toggle="tab" href="#tb">Thông Báo</a>
+ 					</li>
+ 					<li><a data-toggle="modal" href="#Dangnhap">Đăng xuất</a></li>
+ 				</ul>
+ 				
+ 				<br/>
+			</div>
+			<div id="Dangnhap" class="modal fade" tabIndex="-1" role="dialog" araria-labelledby="mymodallabel" aria-hidden="true ">
+	<div class="modal-dialog">	
+		<div class="modal-content">
+			<div class="modal-body">
+					 <p style="font-size: 30px">Bạn có muốn đăng xuất không?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" onClick="VeTrangChu()">Có</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+			</div>
+		</div>
+		
+	</div>
+	        <script>
+		function VeTrangChu()
+		{
+			window.open("./index.html");
+			}
+				</script>
+</div>
+			<div id="thongtin" class="tab-content" >
+				<div id="ttsv" class="tab-pane fade in active">
+				<h3 style="color: red;"> THÔNG TIN SINH VIÊN</h3>
+					<table style="width:400px;text-align:center"border="1px">
+						<tr>
+							<th>Họ Và Tên</th>
+							<td>Nguyễn Văn A</td>
+						</tr>
+						<tr>
+							<th>Ngày Sinh</th>
+							<td>20/11/1997</td>
+						</tr>
+						<tr>
+							<th>Giới Tính</th>
+							<td>Nữ</td>
+						</tr><tr>
+							<th>Học Vấn</th>
+							<td>Đại Học</td>
+						</tr>
+
+					</table>
+				</div>
+				
+				<div id="cbt" class="tab-pane fade">
+					<h3>Các Bài Test</h3>
+					<hr>
+					<section style="width:700px;height:30px;text-align:center;color:blue;>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul> ">
+						<select>
+							<option value="Tin">Tin Học</option>
+							<option value="Văn">Văn Học</option>
+							<option value="Toán">Toán Học</option>
+							<option value="Hóa">Hóa Học</option>
+							<option value="Sinh">Sinh Học</option>
+
+						</select>
+					</section>
+				<div>
+					<table style="text-align: center;" border="2">
+						
+							<tr style="text-align: center;color:indianred;">
+								<th>Môn Học</th>
+								<th>Bài Kiểm Tra</th>
+								<th>Vào Thi</th>
+								
+							</tr>
+					
+						
+							<tr>
+								<td>Toán Học</td>
+								<td>khảo sát chât lượng đầu khóa</td>
+								<td><button style="color: red;" data-toggle="modal" href="#toan">Vào thi</button></td>
+									<div id="toan" class="modal fade" tabIndex="-1" role="dialog" araria-labelledby="mymodallabel" aria-hidden="true ">
+	                          <div class="modal-dialog">	
+		              <div class="modal-content">
+			           <div class="modal-body">
+					 <p style="font-size: 30px">Bạn có muốn thi không?</p>
+			          </div>
+			         <div class="modal-footer">
+				<button type="button" class="btn btn-primary" onClick="VeTranghdh()">Có</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+			      </div>
+		        </div>
+		
+	         </div>
+	            <script>
+		      function VeTranghdh()
+		       {
+		        	window.open("./tnhdh.html");
+		        	}
+			      	</script>
+                   </div>	
+							</tr>
+							<tr>
+								<td>Hóa học</td>
+								<td>kiểm tra đầu ra</td>
+								<td><button style="color: red;"data-toggle="modal" href="#hoa">Vào thi</button></td>
+									<div id="hoa" class="modal fade" tabIndex="-1" role="dialog" araria-labelledby="mymodallabel" aria-hidden="true ">
+	                          <div class="modal-dialog">	
+		              <div class="modal-content">
+			           <div class="modal-body">
+					 <p style="font-size: 30px">Bạn có muốn thi không?</p>
+			          </div>
+			         <div class="modal-footer">
+				<button type="button" class="btn btn-primary" onClick="VeTranghoa()">Có</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+			      </div>
+		        </div>
+		
+	         </div>
+	            <script>
+		      function VeTranghoa()
+		       {
+		        	window.open("./tnmcb.html");
+		        	}
+			      	</script>
+                   </div>	
+								
+							</tr>
+							<tr>
+								<td>Sinh học</td>
+								<td>kiểm tra đầu khóa</td>
+								<td><button style="color: red;"data-toggle="modal" href="#sinh">Vào thi</button></td>
+									<div id="sinh" class="modal fade" tabIndex="-1" role="dialog" araria-labelledby="mymodallabel" aria-hidden="true ">
+	                          <div class="modal-dialog">	
+		              <div class="modal-content">
+			           <div class="modal-body">
+					 <p style="font-size: 30px">Bạn có muốn thi không?</p>
+			          </div>
+			         <div class="modal-footer">
+				<button type="button" class="btn btn-primary" onClick="VeTrangsinh()">Có</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Không</button>
+			      </div>
+		        </div>
+		
+	         </div>
+	            <script>
+		      function VeTrangsinh()
+		       {
+		        	window.open("./tnltw.html");
+		        	}
+			      	</script>
+                   </div>	
+							</tr>
+							
+					
+					</table>
+                </div>
+            
+   
+
+
+           </div>
+            <div id="ls" class="tab-pane fade">
+					<h2 style="text-align: center;color:indianred;">LỊCH SỬ</h2>
+                    <p>các bài test đã làm trong suốt khóa học</p>            
+                     <div class="container">
+         
+  <table  border="2" class="table table-dark table-striped">
+    <thead>
+      <tr style="text-align: center;color:blue;">
+        <th>Môn Học</th>
+        <th>Thời Gian</th>
+        <th>Điểm số</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mạng Căn Bản</td>
+        <td>10/10/2018</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Hệ Điều Hành</td>
+        <td>5/9/2018</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Lập Trình Web</td>
+        <td>10/11/2018</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+                </div>   
+
+             <div id="tb" class="tab-pane fade">
+					<h2 style="text-align: center;color:indianred;">Thông Báo</h2>
+                    <p>thông báo khóa học</p>            
+                    <table  border="2" class="table table-dark table-striped">
+                      
+                         <tr style="text-align: center;color:blue;">
+                     <th>Môn Học</th>
+                     <th>Thời Gian</th>
+                     
+                 </tr>
+                 <tr>
+        <td>Mạng Căn Bản</td>
+        <td>kiểm tra cá nhân ngày 10/10/2018</td>
+        
+      </tr>
+      <tr>
+        <td>Hệ Điều Hành</td>
+        <td>kiểm tra giữa kì ngày 5/9/2018</td>
+        
+      </tr>
+      <tr>
+        <td>Lập Trình Web</td>
+        <td>kiểm tra 20% quá trình 10/11/2018</td>
+        
+                    
+                    </table>
+                </div>   
+
+</body>
+
+</html>
